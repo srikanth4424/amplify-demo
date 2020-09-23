@@ -1,0 +1,40 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amlifydemo-stage-155248-authRole",
+      "UnauthRoleArn": "arn:aws:iam::010823939942:role/amplify-amlifydemo-stage-155248-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::010823939942:role/amplify-amlifydemo-stage-155248-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-amlifydemo-stage-155248-deployment",
+      "UnauthRoleName": "amplify-amlifydemo-stage-155248-unauthRole",
+      "StackName": "amplify-amlifydemo-stage-155248",
+      "StackId": "arn:aws:cloudformation:ap-south-1:010823939942:stack/amplify-amlifydemo-stage-155248/c8bfcf00-fd86-11ea-9f16-02216cfe8d8a",
+      "AmplifyAppId": "d2l1gsea5g4ste"
+    }
+  },
+  "api": {
+    "amlifydemo": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7,
+              "description": "amp-frontend"
+            }
+          },
+          "additionalAuthenticationProviders": []
+        }
+      }
+    }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "service": "amplifyhosting",
+      "type": "cicd",
+      "lastPushTimeStamp": "2020-09-23T10:41:01.190Z"
+    }
+  }
+}
