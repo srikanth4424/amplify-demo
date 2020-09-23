@@ -1,6 +1,6 @@
 version: 1
 applications:
-     - appRoot: /front-end
+  - appRoot: /front-end
     backend:
       phases:
         build:
@@ -16,13 +16,12 @@ applications:
             - npm run build
       artifacts:
         files:
-            - '**/*'
+          - '**/*'
         baseDirectory: dist/front-end
       cache:
         paths:
-            - node_modules/**/*
-      
-     - appRoot: /backend
+          - node_modules/**/*
+  - appRoot: /backend
     backend:
       phases:
         build:
@@ -38,8 +37,8 @@ applications:
             - npm run build
       artifacts:
         files:
-            - '**/*'
+          - '**/*'
         baseDirectory: dist/backend
       cache:
         paths:
-            - node_modules/**/*
+          - node_modules/**/*
